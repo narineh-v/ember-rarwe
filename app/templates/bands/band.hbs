@@ -1,0 +1,24 @@
+{{!-- <div class="rr-sidebar">
+	<ul class="rr-list">
+		{{#each model as |band|}}
+			<li class="rr-list-item">
+				{{#link-to "bands.band.index" band class="rr-band-link"}}
+				{{band.name}}
+				<span class="rr-pointer">
+				{{fa-icon "angle-right"}}
+				</span>
+				{{/link-to}}
+			</li>
+		{{/each}}
+	</ul>
+
+</div> --}}
+	<nav class="rr-navbar" role="navigation">
+		<ul class="rr-nav">
+			<li class="rr-navbar-item" data-test-rr="details-nav-item">{{link-to "Details"
+			"bands.band.details"}}</li>
+			<li class="rr-navbar-item" data-test-rr="songs-nav-item">{{link-to "Songs"
+			"bands.band.songs"}}</li>
+		</ul>
+	</nav>
+	{{outlet}}
